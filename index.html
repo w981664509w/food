@@ -1,0 +1,379 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/style.css" />
+<script>
+window.onload=function(){
+	var oDiv=document.getElementById('bg');
+	var oUl=document.getElementById('ul_list');
+	var aLi=oUl.getElementsByClassName('one');
+	var speed=-4;
+	oUl.innerHTML+=oUl.innerHTML;
+	oUl.style.width=aLi[0].offsetWidth*aLi.length+"px";
+	function move(){
+		if(oUl.offsetLeft<-oUl.offsetWidth/2){
+			oUl.style.left=0
+			}
+		if(oUl.offsetLeft>0){
+			oUl.style.left=-oUl.offsetWidth/2+"px"
+			}
+		oUl.style.left=oUl.offsetLeft+speed+"px"
+		}
+		
+	var timer=setInterval(move,60);
+	oDiv.onmousemove=function(){
+		clearInterval(timer)
+
+		}
+	oDiv.onmouseout=function(){
+		timer=setInterval(move,60)
+		}
+}
+</script>
+
+</head>
+
+<body>
+<div class="screen_top">
+	<input type="button" id="btn" value="全屏显示" />
+	<input type="button" id="btn1" onclick="exitFull()" value="退出全屏" />
+</div>
+<div id="bg" class="bg">
+    <ul id="ul_list">
+        <li class="content one">
+            <ul class="clear box">
+                <li class="box_list">
+                    <div class="top">
+                        <a class="text1" href="#">小鲜肉 蘑菇</a>
+                        <a class="text2" href="#">会员价</a>
+                        <a class="text3" href="#">参考价</a>
+                        <img src="img/2.gif" />
+                    </div>
+                    <ul class="box2">
+                        <li>
+                            <div class="box3">
+                                <p>黄瓜梨汁<br/><span class="span0">&nbsp;huanggualizhi</span></p>
+                            </div>
+                            <span class="span1">15</span>
+                            <span class="span2">17</span>
+                        </li>
+                        <li>
+                            <div class="box3">
+                                <p>黄瓜梨汁<br/><span class="span0">&nbsp;huanggualizhi</span></p>
+                            </div>
+                            <span class="span1">15</span>
+                            <span class="span2">17</span>
+                        </li>
+                        <li>
+                            <div class="box3">
+                                <p>黄瓜梨汁<br/><span class="span0">&nbsp;huanggualizhi</span></p>
+                            </div>
+                            <span class="span1">15</span>
+                            <span class="span2">17</span>
+                        </li>
+                        <li>
+                            <div class="box3">
+                                <p>黄瓜梨汁<br/><span class="span0">&nbsp;huanggualizhi</span></p>
+                            </div>
+                            <span class="span1">15</span>
+                            <span class="span2">17</span>
+                        </li>
+                        <li>
+                            <div class="box3">
+                                <p>黄瓜梨汁<br/><span class="span0">&nbsp;huanggualizhi</span></p>
+                            </div>
+                            <span class="span1">15</span>
+                            <span class="span2">17</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="box_list">
+                    <div class="top">
+                        <a class="text1" href="#">小鲜肉 蘑菇</a>
+                        <a class="text2" href="#">会员价</a>
+                        <a class="text3" href="#">参考价</a>
+                        <img src="img/2.gif" />
+                    </div>
+                    <ul class="box2">
+                        <li>
+                            <div class="box3">
+                                <p>黄瓜梨汁<br/><span class="span0">&nbsp;huanggualizhi</span></p>
+                            </div>
+                            <span class="span1">15</span>
+                            <span class="span2">17</span>
+                        </li>
+                        <li>
+                            <div class="box3">
+                                <p>黄瓜梨汁<br/><span class="span0">&nbsp;huanggualizhi</span></p>
+                            </div>
+                            <span class="span1">15</span>
+                            <span class="span2">17</span>
+                        </li>
+                        <li>
+                            <div class="box3">
+                                <p>黄瓜梨汁<br/><span class="span0">&nbsp;huanggualizhi</span></p>
+                            </div>
+                            <span class="span1">15</span>
+                            <span class="span2">17</span>
+                        </li>
+                        <li>
+                            <div class="box3">
+                                <p>黄瓜梨汁<br/><span class="span0">&nbsp;huanggualizhi</span></p>
+                            </div>
+                            <span class="span1">15</span>
+                            <span class="span2">17</span>
+                        </li>
+                        <li>
+                            <div class="box3">
+                                <p>黄瓜梨汁<br/><span class="span0">&nbsp;huanggualizhi</span></p>
+                            </div>
+                            <span class="span1">15</span>
+                            <span class="span2">17</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="box_list">
+                    <div class="top">
+                        <a class="text1" href="#">小鲜肉 蘑菇</a>
+                        <a class="text2" href="#">会员价</a>
+                        <a class="text3" href="#">参考价</a>
+                        <img src="img/2.gif" />
+                    </div>
+                    <ul class="box2">
+                        <li>
+                            <div class="box3">
+                                <p>黄瓜梨汁<br/><span class="span0">&nbsp;huanggualizhi</span></p>
+                            </div>
+                            <span class="span1">15</span>
+                            <span class="span2">17</span>
+                        </li>
+                        <li>
+                            <div class="box3">
+                                <p>黄瓜梨汁<br/><span class="span0">&nbsp;huanggualizhi</span></p>
+                            </div>
+                            <span class="span1">15</span>
+                            <span class="span2">17</span>
+                        </li>
+                        <li>
+                            <div class="box3">
+                                <p>黄瓜梨汁<br/><span class="span0">&nbsp;huanggualizhi</span></p>
+                            </div>
+                            <span class="span1">15</span>
+                            <span class="span2">17</span>
+                        </li>
+                        <li>
+                            <div class="ppc">
+                                <img src="img/1.gif" />
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="box_li">
+                更全面的产品信息
+            </div>
+        </li>
+        <li class="wrap one">
+            <h2>当季热卖</h2>
+            <ul class="clear box">
+                <li class="box_list_one">
+                    <div class="top">
+                        <a class="text5" href="#">小鲜肉 蘑菇</a>
+                        <a class="text4" href="#">会员价</a>
+                        <a class="text6" href="#">参考价</a>
+                    </div>
+                    <ul class="box2">
+                        <li>
+                            <div class="box7">
+                                <p>黄瓜梨汁<br/><span class="span0">&nbsp;huanggualizhi</span></p>
+                            </div>
+                            <span class="span3">15</span>
+                            <span class="span4">17</span>
+                        </li>
+                        <li>
+                            <div class="box7">
+                                <p>黄瓜梨汁<br/><span class="span0">&nbsp;huanggualizhi</span></p>
+                            </div>
+                            <span class="span3">15</span>
+                            <span class="span4">17</span>
+                        </li>
+                        <li>
+                            <div class="box7">
+                                <p>黄瓜梨汁<br/><span class="span0">&nbsp;huanggualizhi</span></p>
+                            </div>
+                            <span class="span3">15</span>
+                            <span class="span4">17</span>
+                        </li>
+                        <li>
+                            <div class="box7">
+                                <p>黄瓜梨汁<br/><span class="span0">&nbsp;huanggualizhi</span></p>
+                            </div>
+                            <span class="span3">15</span>
+                            <span class="span4">17</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="box_list_one">
+                    <div class="top">
+                        <a class="text5" href="#">小鲜肉 蘑菇</a>
+                        <a class="text4" href="#">会员价</a>
+                        <a class="text6" href="#">参考价</a>
+                    </div>
+                    <ul class="box2">
+                        <li>
+                            <div class="box7">
+                                <p>黄瓜梨汁<br/><span class="span0">&nbsp;huanggualizhi</span></p>
+                            </div>
+                            <span class="span3">15</span>
+                            <span class="span4">17</span>
+                        </li>
+                        <li>
+                            <div class="box7">
+                                <p>黄瓜梨汁<br/><span class="span0">&nbsp;huanggualizhi</span></p>
+                            </div>
+                            <span class="span3">15</span>
+                            <span class="span4">17</span>
+                        </li>
+                        <li>
+                            <div class="box7">
+                                <p>黄瓜梨汁<br/><span class="span0">&nbsp;huanggualizhi</span></p>
+                            </div>
+                            <span class="span3">15</span>
+                            <span class="span4">17</span>
+                        </li>
+                        <li>
+                            <div class="box7">
+                                <p>黄瓜梨汁<br/><span class="span0">&nbsp;huanggualizhi</span></p>
+                            </div>
+                            <span class="span3">15</span>
+                            <span class="span4">17</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="box_list_one">
+                    <div class="top">
+                        <a class="text5" href="#">小鲜肉 蘑菇</a>
+                        <a class="text4" href="#">会员价</a>
+                        <a class="text6" href="#">参考价</a>
+                    </div>
+                    <ul class="box2">
+                        <li>
+                            <div class="box7">
+                                <p>黄瓜梨汁<br/><span class="span0">&nbsp;huanggualizhi</span></p>
+                            </div>
+                            <span class="span3">15</span>
+                            <span class="span4">17</span>
+                        </li>
+                        <li>
+                            <div class="box7">
+                                <p>黄瓜梨汁<br/><span class="span0">&nbsp;huanggualizhi</span></p>
+                            </div>
+                            <span class="span3">15</span>
+                            <span class="span4">17</span>
+                        </li>
+                        <li>
+                            <div class="box7">
+                                <p>黄瓜梨汁<br/><span class="span0">&nbsp;huanggualizhi</span></p>
+                            </div>
+                            <span class="span3">15</span>
+                            <span class="span4">17</span>
+                        </li>
+                        <li>
+                            <div class="box7">
+                                <p>黄瓜梨汁<br/><span class="span0">&nbsp;huanggualizhi</span></p>
+                            </div>
+                            <span class="span3">15</span>
+                            <span class="span4">17</span>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="box_li">
+                更全面的产品信息
+            </div>
+        </li>
+        <li class="first one">
+            <div class="left">
+                <img class="img1" src="img/4.gif" />
+                <img class="img2" src="img/3.gif" />
+                <dl class="dl_one">
+                    <dt>活力满满套餐</dt>
+                    <dd>烧饼、水果、馒头</dd>
+                    <dd>畅想4G，拥有3G</dd>
+                </dl>
+                <dl class="dl_two">
+                    <dt>活力满满套餐</dt>
+                    <dd>烧饼、水果、馒头</dd>
+                    <dd>畅想4G，拥有3G</dd>
+                </dl>
+                <dl class="dl_three">
+                    <dt>活力满满套餐</dt>
+                    <dd>烧饼、水果、馒头</dd>
+                    <dd>畅想4G，拥有3G</dd>
+                </dl>
+            </div>
+            <div class="right">
+                <img class="img1" src="img/4.gif" />
+                <img class="img2" src="img/3.gif" />
+                <dl class="dl_one">
+                    <dt>活力满满套餐</dt>
+                    <dd>烧饼、水果、馒头</dd>
+                    <dd>畅想4G，拥有3G</dd>
+                </dl>
+                <dl class="dl_two">
+                    <dt>活力满满套餐</dt>
+                    <dd>烧饼、水果、馒头</dd>
+                    <dd>畅想4G，拥有3G</dd>
+                </dl>
+                <dl class="dl_three">
+                    <dt>活力满满套餐</dt>
+                    <dd>烧饼、水果、馒头</dd>
+                    <dd>畅想4G，拥有3G</dd>
+                </dl>
+            </div>
+        </li>
+    </ul>
+</div>
+<script language="JavaScript">
+document.getElementById("btn").onclick=function(){
+    var elem = document.getElementById("bg");
+    requestFullScreen(elem);
+};
+
+function requestFullScreen(element) {
+    var requestMethod = element.requestFullScreen || //W3C
+    element.webkitRequestFullScreen ||    //Chrome等
+    element.mozRequestFullScreen || //FireFox
+    element.msRequestFullScreen; //IE11
+    if (requestMethod) {
+        requestMethod.call(element);
+    }
+    else if (typeof window.ActiveXObject !== "undefined") {//for Internet Explorer
+        var wscript = new ActiveXObject("WScript.Shell");
+        if (wscript !== null) {
+            wscript.SendKeys("{F11}");
+        }
+    }
+}
+
+function exitFull() {
+    var exitMethod = document.exitFullscreen || //W3C
+    document.mozCancelFullScreen ||    //Chrome等
+    document.webkitExitFullscreen || //FireFox
+    document.webkitExitFullscreen; //IE11
+    if (exitMethod) {
+        exitMethod.call(document);
+    }
+    else if (typeof window.ActiveXObject !== "undefined") {//for Internet Explorer
+        var wscript = new ActiveXObject("WScript.Shell");
+        if (wscript !== null) {
+            wscript.SendKeys("{F11}");
+        }
+    }
+}
+
+</script>
+</body>
+</html>
